@@ -1,0 +1,33 @@
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.open {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.in_progress {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.resolved {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.closed {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.cancelled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
