@@ -5,17 +5,17 @@ Production-quality Core build for internal support ticket tracking.
 ## Stack
 - Frontend: React 19, Redux Toolkit, RTK Query, SCSS Modules, Formik, Yup
 - Backend: Node.js, Express, Mongoose
-- Database: MongoDB
+- Database: MongoDB (local)
 
 ## Prerequisites
 - Node.js 18+
-- MongoDB Atlas account (free tier works)
+- MongoDB Community Server installed and running locally
 
 ## Setup
 
-### Backend (MongoDB Atlas)
-1. Follow [docs/mongodb-atlas-setup.md](docs/mongodb-atlas-setup.md) to create a cluster and connection string.
-2. Set `MONGODB_URI` in `backend/.env`.
+### Backend (Local MongoDB)
+1. Follow [docs/mongodb-local-setup.md](docs/mongodb-local-setup.md) to install and start MongoDB.
+2. Copy `backend/.env.example` to `backend/.env`.
 
 ```bash
 cd backend
@@ -28,12 +28,12 @@ npm run dev
 ### Frontend
 ```bash
 cd frontend
-cp .env.example .env
+copy .env.example .env
 npm install
 npm run dev
 ```
 
-API: http://localhost:5000  
+API: http://localhost:5000
 UI: http://localhost:5173
 
 ## Tests
